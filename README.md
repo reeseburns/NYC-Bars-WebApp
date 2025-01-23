@@ -28,7 +28,7 @@
    
 3. ***Add New Bars:*** Users can contribute by adding their favorite bars to the database with the categories name, type, occasion, area, if reservation is needed, cost, and if user visited.
 
-4. ***Edit/Delete Existing Bars:*** Easily modify or remove existing entries to keep the bar database up-to-date and accurate.
+4. ***Edit & Delete Existing Bars:*** Easily modify or remove existing entries to keep the bar database up-to-date and accurate.
 
 5. ***Search for Bars:*** Quickly find bars that match specific criteria or keywords.
   
