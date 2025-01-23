@@ -1,0 +1,47 @@
+<!-- DELETE DATA PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home-Brewed</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- COLORED HEADING SECTION -->
+        <header class="header">
+            <a href="#home" class="webName"><i class='bx bx-drink' id="logo"></i><i>Home-Brewed</i></a>
+            <div class="icons">
+                <a href="{{ url_for('search') }}" class="search-icon"><i class="bx bx-search"></i></a> <!-- Search icon -->
+                <i class="bx bx-menu" id="menu-icon"></i> <!-- Menu icon -->
+            </div>
+            
+            <!-- Logout button -->
+            <div class="logout-button"><a href="{{ url_for('logout') }}">Logout</a></div>
+            
+            <!-- Navbar content -->
+            <nav class="navbar">
+                <a href="{{ url_for('index') }}" class="active">Home</a> <!-- link to Add/Edit/Delete -->
+                <a href="{{ url_for('sort') }}">Sort</a>
+                <a href="{{ url_for('recommend') }}">Recs</a>
+            </nav>
+        </header>
+
+        <!-- DELETE -->
+        <section class="delete" id="delete">
+            <h2 class="heading">Delete <span>{{ bar.name }}</span>!</h2>
+            <p>Are you sure you want to delete <span>{{ bar.name }}</span>?</p>
+            
+            <!-- Delete & Cancel Buttons -->
+            <div class="button-group">
+                <form action="{{ url_for('delete', bar_id=bar._id) }}" method="post" style="display: inline;">
+                    <button type="submit" class="button">Yes, Delete</button>
+                </form>
+                <a href="{{ url_for('index') }}" class="button cancel">Cancel</a>
+            </div>
+        </section>
+        <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    </body>
+</html>

@@ -1,0 +1,352 @@
+[
+    {
+        "Name": "Little Branch",
+        "Type": "Speakeasy",
+        "Occasion": "Jazz",
+        "Area": "West Village",
+        "Reservation": "No",
+        "Cost": "$",
+        "Rating": "0/10",
+        "URL": "https://littlebranch.store"
+    },
+    {
+        "Name": "Employees Only",
+        "Type": "Speakeasy",
+        "Occasion": "Date",
+        "Area": "West Village",
+        "Reservation": "Yes",
+        "Cost": "$$$",
+        "Rating": "0/10",
+        "URL": "https://m.employeesonlynyc.com"
+    },
+    {
+        "Name": "Bathtub Gin",
+        "Type": "Speakeasy",
+        "Occasion": "Date",
+        "Area": "Chelsea",
+        "Reservation": "No",
+        "Cost": "$$$",
+        "Rating": "0/10",
+        "URL": "https://www.bathtubginnyc.com"
+    },
+    {
+        "Name": "Attaboy",
+        "Type": "Speakeasy",
+        "Occasion": "Fancy",
+        "Area": "Lower East Side",
+        "Reservation": "Yes",
+        "Cost": "$$$",
+        "Rating": "0/10",
+        "URL": "https://attaboy.us/visit-us"
+    },
+    {
+        "Name": "Please Don't Tell",
+        "Type": "Speakeasy",
+        "Occasion": "Date",
+        "Area": "East Village",
+        "Reservation": "Yes",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "https://www.pdtnyc.com"
+    },
+    {
+        "Name": "Sincerely, Ophelia",
+        "Type": "Speakeasy",
+        "Occasion": "Groups",
+        "Area": "East Village",
+        "Reservation": "No",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "https://www.sincerelyophelianyc.com"
+    },
+    {
+        "Name": "La Noxe",
+        "Type": "Speakeasy",
+        "Occasion": "Retro",
+        "Area": "Chelsea",
+        "Reservation": "No",
+        "Cost": "$$$",
+        "Rating": "0/10",
+        "URL": "https://www.lanoxenyc.com"
+    },
+    {
+        "Name": "Nothing Really Matters",
+        "Type": "Speakeasy",
+        "Occasion": "Happy Hour",
+        "Area": "Midtown",
+        "Reservation": "Yes",
+        "Cost": "$$$",
+        "Rating": "0/10",
+        "URL": "https://nothingreallymatters.party"
+    },
+    {
+        "Name": "The Garret",
+        "Type": "Speakeasy",
+        "Occasion": "Casual",
+        "Area": "West Village",
+        "Reservation": "No",
+        "Cost": "$$",
+        "Rating": "5/10",
+        "URL": "http://www.thegarretwest.com"
+    },
+    {
+        "Name": "Apotheke Nomad",
+        "Type": "Speakeasy",
+        "Occasion": "Date",
+        "Area": "Nomad",
+        "Reservation": "Yes",
+        "Cost": "$$$",
+        "Rating": "0/10",
+        "URL": "https://www.apothekemixology.com/location/apotheke-nomad/"
+    },
+    {
+        "Name": "George Bang Bang",
+        "Type": "Speakeasy",
+        "Occasion": "Jazz",
+        "Area": "Koreatown",
+        "Reservation": "Yes",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "https://www.gbbnyc.com"
+    },
+    {
+        "Name": "The Back Room",
+        "Type": "Speakeasy",
+        "Occasion": "Casual",
+        "Area": "Lower East Side",
+        "Reservation": "No",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "http://backroomnyc.com"
+    },
+    {
+        "Name": "Titsou Bar",
+        "Type": "Hotel",
+        "Occasion": "Date",
+        "Area": "Tribeca",
+        "Reservation": "No",
+        "Cost": "$$$",
+        "Rating": "0/10",
+        "URL": "https://www.hotelsbarriere.com/en/collection-fouquet-s/new-york/restaurants-and-bars/titsou-bar"
+    },
+    {
+        "Name": "Up & Up",
+        "Type": "Speakeasy",
+        "Occasion": "Date",
+        "Area": "Greenwich Village",
+        "Reservation": "Yes",
+        "Cost": "$$",
+        "Rating": "8/10",
+        "URL": "https://www.upandupnyc.com"
+    },
+    {
+        "Name": "Elvis",
+        "Type": "Wine Bar",
+        "Occasion": "Date",
+        "Area": "Noho",
+        "Reservation": "No",
+        "Cost": "$$",
+        "Rating": "7/10",
+        "URL": "https://www.elvisnyc.com"
+    },
+    {
+        "Name": "Nubeluz",
+        "Type": "Hotel",
+        "Occasion": "Fancy",
+        "Area": "Nomad",
+        "Reservation": "Yes",
+        "Cost": "$$$",
+        "Rating": "0/10",
+        "URL": "https://www.nubeluzbyjose.com"
+    },
+    {
+        "Name": "Double Chicken Please",
+        "Type": "Cocktail Bar",
+        "Occasion": "Casual",
+        "Area": "Lower East Side",
+        "Reservation": "Yes",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "https://doublechickenplease.com/"
+    },
+    {
+        "Name": "Dante",
+        "Type": "Cocktail Bar",
+        "Occasion": "Casual",
+        "Area": "Greenwich Village",
+        "Reservation": "Yes",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "https://www.dante-nyc.com"
+    },
+    {
+        "Name": "The Dead Rabbit",
+        "Type": "Irish Pub",
+        "Occasion": "Social",
+        "Area": "Financial District",
+        "Reservation": "Yes",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "https://thedeadrabbit.com/"
+    },
+    {
+        "Name": "Maison Premiere",
+        "Type": "Oyster Bar",
+        "Occasion": "Romantic",
+        "Area": "Williamsburg",
+        "Reservation": "Yes",
+        "Cost": "$$$",
+        "Rating": "0/10",
+        "URL": "https://maisonpremiere.com"
+    },
+    {
+        "Name": "Katana Kitten",
+        "Type": "Cocktail Bar",
+        "Occasion": "Casual",
+        "Area": "West Village",
+        "Reservation": "Yes",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "https://www.katanakitten.com"
+    },
+    {
+        "Name": "The Long Island Bar",
+        "Type": "Cocktail Bar",
+        "Occasion": "Casual",
+        "Area": "Cobble Hill",
+        "Reservation": "No",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "https://www.thelongislandbar.com"
+    },
+    {
+        "Name": "Bemelmans Bar",
+        "Type": "Hotel Bar",
+        "Occasion": "Upscale",
+        "Area": "Upper East Side",
+        "Reservation": "Yes",
+        "Cost": "$$$$",
+        "Rating": "0/10",
+        "URL": "https://www.rosewoodhotels.com/en/the-carlyle-new-york/dining/bemelmans-bar"
+    },
+    {
+        "Name": "Angel's Share",
+        "Type": "Speakeasy",
+        "Occasion": "Romantic",
+        "Area": "West Village",
+        "Reservation": "Yes",
+        "Cost": "$$$",
+        "Rating": "0/10",
+        "URL": "https://www.angelssharenyc.com"
+    },
+    {
+        "Name": "Bar Goto",
+        "Type": "Cocktail Bar",
+        "Occasion": "Casual",
+        "Area": "Lower East Side",
+        "Reservation": "No",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "https://www.bargoto.com"
+    },
+    {
+        "Name": "Amor y Amargo",
+        "Type": "Cocktail Bar",
+        "Occasion": "Intimate",
+        "Area": "East Village",
+        "Reservation": "No",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "https://www.amoryamargo.com"
+    },
+    {
+        "Name": "The Campbell",
+        "Type": "Hotel Bar",
+        "Occasion": "Social",
+        "Area": "Midtown",
+        "Reservation": "Yes",
+        "Cost": "$$$",
+        "Rating": "0/10",
+        "URL": "https://www.thecampbellnyc.com"
+    },
+    {
+        "Name": "Saint Tuesday",
+        "Type": "Cocktail Bar",
+        "Occasion": "Live Music",
+        "Area": "Tribeca",
+        "Reservation": "No",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "https://www.sainttuesdaynyc.com"
+    },
+    {
+        "Name": "Mothers Ruin",
+        "Type": "Cocktail Bar",
+        "Occasion": "Casual",
+        "Area": "Nolita",
+        "Reservation": "No",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "https://mothersruinnyc.com"
+    },
+    {
+        "Name": "Milk & Honey",
+        "Type": "Speakeasy",
+        "Occasion": "Romantic",
+        "Area": "Lower East Side",
+        "Reservation": "Yes",
+        "Cost": "$$$",
+        "Rating": "0/10",
+        "URL": "http://www.milknhoneykosher.com"
+    },
+    {
+        "Name": "Taverna Kyclades",
+        "Type": "Greek",
+        "Occasion": "Dining",
+        "Area": "Astoria",
+        "Reservation": "Yes",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "https://www.tavernakyclades.com"
+    },
+    {
+        "Name": "Sugar Monk",
+        "Type": "Cocktail Bar",
+        "Occasion": "Chic",
+        "Area": "Harlem",
+        "Reservation": "Yes",
+        "Cost": "$$$",
+        "Rating": "0/10",
+        "URL": "https://sugarmonklounge.com"
+    },
+    {
+        "Name": "The Gin Mill",
+        "Type": "Pub",
+        "Occasion": "Casual",
+        "Area": "Upper West Side",
+        "Reservation": "No",
+        "Cost": "$",
+        "Rating": "0/10",
+        "URL": "https://www.theginmillnyc.com"
+    },
+    {
+        "Name": "Death & Company",
+        "Type": "Speakeasy",
+        "Occasion": "Sophisticated",
+        "Area": "East Village",
+        "Reservation": "Yes",
+        "Cost": "$$$",
+        "Rating": "0/10",
+        "URL": "https://www.deathandcompany.com/"
+    },
+    {
+        "Name": "Lullaby",
+        "Type": "Speakeasy",
+        "Occasion": "Relaxed",
+        "Area": "Lower East Side",
+        "Reservation": "No",
+        "Cost": "$$",
+        "Rating": "0/10",
+        "URL": "https://www.lullabybar.com"
+    }
+]
