@@ -358,18 +358,6 @@ def recommend():
                 return redirect(url_for("recommend"))
 
     return render_template("recommend.html", bars=recommendations)
-
-
-# --------UPDATE BAR URL's--------
-from web_app.recommender.update_urls import search_update_links
-@app.route('/update-urls', methods=['POST'])
-def update_urls():
-    json_file_path = os.path.join(os.path.dirname(__file__), 'recommender', 'bars.json')
-    try:
-        search_update_links(json_file_path)
-        return {"message": "Bar URLs updated successfully!"}, 200
-    except Exception as e:
-        return {"error": str(e)}, 500
     
 
 # --------LOGOUT PAGE--------
