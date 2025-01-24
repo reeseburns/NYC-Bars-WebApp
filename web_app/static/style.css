@@ -285,22 +285,6 @@ p {
     color: var(--heading-color2);
     
 }
-.add-bar-button {
-    display: inline-block;
-    text-align: center;
-    background-color: #e39dbe;
-    color: var(--icon-color) !important;
-    padding: 0.8rem 2rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-.add-bar-button:hover {
-    background-color: #d883ab; /* Slightly darker on hover */
-    text-decoration: none;
-}
 
 
 /* ----------DELETE PAGE---------- */
@@ -478,6 +462,7 @@ input[type="text"]:focus {
     background-color: white; /* Background for non-column area */
     padding: 10px;
     border-radius: 8px;
+    margin-bottom: 8rem;
 }
 .table-wrapper table {
     width: 100%;               /* Fit within wrapper */
@@ -489,15 +474,19 @@ input[type="text"]:focus {
     text-align: left;
     padding: 8px;
 }
+/* TABLE COL HEADERS */
 .table-wrapper th {
     background: linear-gradient(90deg, var(--heading-color), var(--heading-color2)); /* Gradient for header columns */
     color: var(--icon-color);
+    font-size: 2.25rem;
     font-weight: bold;
     font-style: italic;
     text-align: center;
 }
+/* TABLE CELLS */
 .table-wrapper td {
-    background: white; /* White table cells */
+    font-size: 1.75rem;        /* Cell content font size */
+    background-color: white; /* White cells */
     color: black;
 }
 .table-wrapper td:first-child {
@@ -506,12 +495,9 @@ input[type="text"]:focus {
 }
 .table-wrapper th:last-child, .table-wrapper td:last-child {background-color: white;}
 .table-wrapper .action-cell {
-    background-color: #b2acd0; /* Lighter color */
     color: white;
     text-align: center; /* Center align */
 }
-.table-wrapper .action-cell a {color: white;} /* "Edit/Delete" */
-.table-wrapper td a {color: white;}           /* Font when clicked */
 .table-wrapper tr:nth-child(even) td {background-color: #f9f9f9;} /* Alternate row background */
 .table-wrapper tr:hover td {background-color: #f1f1f1;}           /* Highlight on hover */
 
@@ -558,6 +544,7 @@ input[type="text"]:focus {
     font-size: 1.75rem;
     line-height: 1.4;
     text-align: left;
+    font-weight: 100;
 }
 .card span {
     font-weight: bold;

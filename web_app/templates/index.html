@@ -23,9 +23,9 @@
             
             <!-- Navbar content -->
             <nav class="navbar">
-                <a href="{{ url_for('index') }}" class="active">Home</a> <!-- link to Add/Edit/Delete -->
-                <a href="{{ url_for('sort') }}">Sort</a>
-                <a href="{{ url_for('recommend') }}">Recs</a>
+                <a href="{{ url_for('index') }}" class="active">Dashboard</a> <!-- link to Edit/Delete -->
+                <a href="{{ url_for('sort') }}">Sort Bars</a>
+                <a href="{{ url_for('recommend') }}">Recommendations</a>
             </nav>
         </header>
 
@@ -38,12 +38,12 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Action</th> <!-- For Edit/Delete -->
+                        <th></th> <!-- For Edit/Delete -->
                         <th>Name</th>
                         <th>Type</th>
                         <th>Occasion</th>
                         <th>Area</th>
-                        <th>Reservation</th>
+                        <th>Res?</th>
                         <th>Cost</th>
                         <th>Visited?</th>
                     </tr>
@@ -51,17 +51,16 @@
                 <tbody>
                     {% for bar in bars %}
                     <tr>
-                        <!-- Modify: Add, Edit,Delete -->
+                        <!-- Edit/Delete -->
                         <td class="action-cell">
                             <select onchange="handleAction(this, '{{ bar._id }}')"> <!-- script.js function -->
-                                <option value="" disabled selected>--Choose--</option>
-                                <option value="add">Add</option>
+                                <option value="" disabled selected style="color: #a30052;">--Modify--</option>
                                 <option value="edit">Edit</option>
                                 <option value="delete">Delete</option>
                             </select>
                         </td>              
 
-                        <td>{{ bar.name }}</td>
+                        <td style="font-style: italic; font-weight: bold; color: #a30052">{{ bar.name }}</td>
                         <td>{{ bar.type }}</td>
                         <td>{{ bar.occasion }}</td>
                         <td>{{ bar.area }}</td>
@@ -69,11 +68,25 @@
                         <td>{{ bar.cost }}</td>
                         <td>{{ bar.status }}</td>
                     </tr>
-                    {% else %}
-                        <td colspan="8" style="text-align: center;">
-                            <a href="{{ url_for('add') }}" class="add-bar-button">Add a Bar!</a>
-                        </td>
                     {% endfor %}
+                    <tr>
+                        <td colspan="8" style="text-align: center;">
+                            <a href="{{ url_for('add') }}" 
+                                style="display: inline-block; 
+                                    width: 100%; 
+                                    background-color: #f9f9f9; 
+                                    color: #a30052; 
+                                    font-size: 1.75rem; 
+                                    font-weight: bold; 
+                                    font-style: italic;
+                                    padding: 0.6rem; 
+                                    border-radius: 4px; 
+                                    text-decoration: none; 
+                                    text-align: center; 
+                                    transition: background-color 0.3s ease;">
+                                -- Add Bar --</a>
+                        </td>
+                    </tr>                                     
                 </tbody>
             </table>
         </div>

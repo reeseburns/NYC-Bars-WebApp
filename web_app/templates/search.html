@@ -23,9 +23,9 @@
             
             <!-- Navbar content -->
             <nav class="navbar">
-                <a href="{{ url_for('index') }}">Home</a> <!-- link to Add/Edit/Delete -->
-                <a href="{{ url_for('sort') }}">Sort</a>
-                <a href="{{ url_for('recommend') }}">Recs</a>
+                <a href="{{ url_for('index') }}">Dashboard</a> <!-- link to Edit/Delete -->
+                <a href="{{ url_for('sort') }}">Sort Bars</a>
+                <a href="{{ url_for('recommend') }}">Recommendations</a>
             </nav>
         </header>
 
@@ -130,51 +130,74 @@
         </div>
 
         <!-- DISPLAY FILTERED BARS -->
-        {% if bars %}
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Action</th> <!-- For Edit/Delete -->
-                            <th>Name</th>
-                            <th>Type</th>
-                            <th>Occasion</th>
-                            <th>Area</th>
-                            <th>Reservation</th>
-                            <th>Cost</th>
-                            <th>Visited?</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th> <!-- For Edit/Delete -->
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Occasion</th>
+                        <th>Area</th>
+                        <th>Res?</th>
+                        <th>Cost</th>
+                        <th>Visited?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if bars|length > 0 %}
                         {% for bar in bars %}
-                        <tr>
-                            <!-- Modify: Add, Edit,Delete -->
-                            <td class="action-cell">
-                                <select onchange="handleAction(this, '{{ bar._id }}')"> <!-- script.js function -->
-                                    <option value="" disabled selected>--Choose--</option>
-                                    <option value="add">Add</option>
-                                    <option value="edit">Edit</option>
-                                    <option value="delete">Delete</option>
-                                </select>
-                            </td>                               
-                            
-                            <td>{{ bar.name }}</td>
-                            <td>{{ bar.type }}</td>
-                            <td>{{ bar.occasion }}</td>
-                            <td>{{ bar.area }}</td>
-                            <td>{{ bar.reservation }}</td>
-                            <td>{{ bar.cost }}</td>
-                            <td>{{ bar.status }}</td>
-                        </tr>
-                        {% else %}
                             <tr>
-                                <td colspan="8" style="text-align: center;">No bars found</td> 
-                            </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>   
-        {% endif %}         
+                                <!-- Modify: Edit/Delete -->
+                                <td class="action-cell">
+                                    <select onchange="handleAction(this, '{{ bar._id }}')"> <!-- script.js function -->
+                                        <option value="" disabled selected>--Modify--</option>
+                                        <option value="edit">Edit</option>
+                                        <option value="delete">Delete</option>
+                                    </select>
+                                </td>                               
+                                
+                                <td style="font-style: italic; font-weight: bold; color: #a30052">{{ bar.name }}</td>
+                                <td>{{ bar.type }}</td>
+                                <td>{{ bar.occasion }}</td>
+                                <td>{{ bar.area }}</td>
+                                <td>{{ bar.reservation }}</td>
+                                <td>{{ bar.cost }}</td>
+                                <td>{{ bar.status }}</td>
+                            </tr>   
+                        {% endfor %}                
+                    {% else %}      
+                        <tr>
+                            <td colspan="8" style=
+                                "text-align: center; 
+                                color: white; 
+                                font-weight: bold;">
+                                No bars found. Select other option.
+                            </td>
+                        </tr>    
+                    {% endif %}      
+                    <tr>
+                        <td colspan="8" style="text-align: center;">
+                            <a href="{{ url_for('add') }}" 
+                                style="display: inline-block; 
+                                    width: 100%; 
+                                    background-color: #f9f9f9; 
+                                    color: #a30052; 
+                                    font-size: 1.75rem; 
+                                    font-weight: bold; 
+                                    font-style: italic;
+                                    padding: 0.6rem; 
+                                    border-radius: 4px; 
+                                    text-decoration: none; 
+                                    text-align: center; 
+                                    transition: background-color 0.3s ease;">
+                                -- Add Bar --</a>
+                        </td>
+                    </tr>       
+                </tbody>
+            </table>
+        </div>   
+     
         <script src="{{ url_for('static', filename='script.js') }}" defer></script>
     </body>
 </html>
