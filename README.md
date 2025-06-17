@@ -42,8 +42,8 @@
 
 ```
 cd Desktop
-git clone https://github.com/reeseburns/NYC-Bars-App.git
-cd NYC-Bars-App/web_app
+git clone https://github.com/reeseburns/NYC-Bars-WebApp.git
+cd NYC-Bars-WebApp/web_app
 python3 -m venv .venv
 source .venv/bin/activate
 ```
